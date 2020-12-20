@@ -8,13 +8,14 @@ public class Application1 {
 
         runner1.start();
         runner2.start();
+        System.out.println("çıktı");
     }
 
     static class Runner extends Thread {
 
         @Override
         public void run() {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 100; i++) {
                 System.out.println("Merhaba " + i + " - " + this.getName());
             }
         }
